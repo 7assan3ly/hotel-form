@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Hotel Reservation</title>
+</head>
+
+<body>
+    <!-- PAGE WRAPPER -->
+    <div class="page-wrapper">
+        <!-- BANNER SECTION -->
+        <section class="banner-section">
+            <p class="banner-title">Hotel Reservation</p>
+            <p class="banner-des">Save money, save time by find the best hotel reservation deals</p>
+            <img class="hotel-img" src="img/hotel.jpg" alt="Hotel Reservation">
+        </section>
+
+        <!-- FORM SECTION -->
+        <section class="form-section">
+            <!-- FORM -->
+            <form>
+                <div class="input-wrapper relative">
+                    <label for="destination">Destination</label>
+                    <input type="text" name="destination" id="destination" placeholder="City or Destination">
+                    <ul class="destinationList" id="destinationList"></ul>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="hotel">Hotel Name</label>
+                    <input type="text" name="hotel" id="hotel" placeholder="Hotel Name">
+                </div>
+
+                <div class="two-input">
+                    <div class="input-wrapper">
+                        <label for="checkIn">Check in</label>
+                        <input type="date" name="checkIn" id="checkIn">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="checkOut">Check Out</label>
+                        <input type="date" name="checkOut" id="checkOut">
+                    </div>
+                </div>
+
+                <div class="two-input">
+                    <div class="input-wrapper">
+                        <label for="nights">Nights</label>
+                        <select name="nights" id="nights">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="travellers">Travellers</label>
+                        <select name="nights" id="nights">
+                            <option value="1">1 Room, Adult 2, 0 Children</option>
+                            <option value="2">1 Room, Adult 2, 1 Children</option>
+                            <option value="3">1 Room, Adult 2, 2 Children</option>
+                            <option value="4">2 Room, Adult 3, 1 Children</option>
+                            <option value="5">2 Room, Adult 4, 2 Children</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="two-input">
+                    <div class="input-wrapper relative">
+                        <label for="nationality">Nationality</label>
+                        <input type="text" name="nationality" id="nationality" placeholder="Your Nationality">.
+                        <ul class="nationalityList" id="nationalityList"></ul>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="starRating">Star Rating</label>
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label class="full" for="star5" title="Awesome - 5 stars"></label>
+
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" />
+                            <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" />
+                            <label class="half" for="star3half" title="Good - 3.5 stars"></label>
+
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label class="full" for="star3" title="Average - 3 stars"></label>
+
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" />
+                            <label class="half" for="star2half" title="Bad - 2.5 stars"></label>
+
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label class="full" for="star2" title="Bad - 2 stars"></label>
+
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" />
+                            <label class="half" for="star1half" title="Bad - 1.5 stars"></label>
+
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label class="full" for="star1" title="Very Bad - 1 star"></label>
+
+                            <input type="radio" id="starhalf" name="rating" value="half" />
+                            <label class="half" for="starhalf" title="Very Bad - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <button type="button" class="form-btn" data-bs-toggle="modal" data-bs-target="#optionsModal">More
+                    Options</button>
+                <!-- OPTIONS POPUP -->
+                <div class="modal fade" id="optionsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">More Search Options</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="two-input">
+                                    <div class="input-wrapper">
+                                        <label for="country">Country</label>
+                                        <select name="country" id="country">
+                                            <option value="egypt">Egypt</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <label for="city">City</label>
+                                        <select name="city" id="city">
+                                            <option value="Cairo">Cairo</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <label for="currency">Currency</label>
+                                        <select name="currency" id="currency">
+                                            <option value="egp">EGP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="form-btn" data-bs-dismiss="modal">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="form-btn">Search</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- SCRIPT -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

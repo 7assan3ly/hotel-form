@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+}
+
+/* BANNER SECTION */
+.banner-section {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-section .banner-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.banner-section .hotel-img {
+    width: 500px;
+}
+
+/* FORM SECTION */
+.form-section {
+    height: 100vh;
+    flex: 1;
+    padding: 3rem;
+    background-color: #193668;
+    border-radius: 2rem 0 0 2rem;
+    -webkit-border-radius: 2rem 0 0 2rem;
+    -moz-border-radius: 2rem 0 0 2rem;
+    -ms-border-radius: 2rem 0 0 2rem;
+    -o-border-radius: 2rem 0 0 2rem;
+    box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.15);
+}
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-section .input-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.relative {
+    position: relative
+}
+.form-section .input-wrapper .destinationList, .form-section .input-wrapper .nationalityList {
+    list-style: none;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    width: 100%;
+    top: 4.25rem;
+}
+.form-section .input-wrapper .nationalityList img {
+    width: 20px
+}
+.form-section .input-wrapper .destinationList li, .form-section .input-wrapper .nationalityList li {
+    cursor: pointer
+}
+.form-section .input-wrapper label {
+    font-weight: 500;
+    color: #D29E25;
+}
+.form-section .input-wrapper input, .form-section .input-wrapper select {
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.form-section .two-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.form-section .form-btn {
+    color: #fff;
+    padding: 1rem;
+    width: 10rem;
+    background-color: #D29E25;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    transition: .5s all ease-in-out;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    border: none;
+    -ms-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+}
+.form-section .form-btn:last-of-type {
+    align-self: flex-end;
+}
+.form-section .form-btn:hover {
+    color: #D29E25;
+    background-color: #f3f3f3;
+}
+
+/* RATING */
+.rating { 
+    border: none;
+    align-self: flex-start
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+margin: 5px;
+font-size: 1.25em;
+font-family: FontAwesome;
+display: inline-block;
+content: "\f005";
+}
+
+.rating > .half:before { 
+content: "\f089";
+position: absolute;
+}
+
+.rating > label { 
+color: #ddd !important; 
+float: right; 
+}
+.rating > input:checked ~ label, 
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label { color: #FFD700 !important;  } 
+
+.rating > input:checked + label:hover, 
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label { color: #D29E25 !important;  } 
